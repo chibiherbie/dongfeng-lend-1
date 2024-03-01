@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --surface-0: 255 255 255;
+  --surface-50: 249 250 251;
+  --surface-100: 243 244 246;
+  --surface-200: 229 231 235;
+  --surface-300: 209 213 219;
+  --surface-400: 156 163 175;
+  --surface-500: 107 114 128;
+  --surface-600: 75 85 99;
+  --surface-700: 55 65 81;
+  --surface-800: 31 41 55;
+  --surface-900: 17 24 39;
+  --surface-950: 8 8 8;
+}
+
+.carousel__next {
+  visibility: hidden;
+}
+
+.carousel__prev {
+  visibility: hidden;
+}
