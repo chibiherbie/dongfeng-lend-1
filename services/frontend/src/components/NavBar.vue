@@ -2,7 +2,7 @@
   <header class="text-gray-800 body-font fixed top-0 z-10 w-full">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer">
-        <img src="../assets/img/logo-df-h360-color.png" class="max-w-[200px] max-h-[80px]" alt="">
+        <img src="../../public/img/logo-df-h360-color.png" class="max-w-[200px] max-h-[80px]" alt="">
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center uppercase font-medium	transition duration-200 ease-in-out cursor-pointer">
         <a class="mr-5 hover:text-white bg-white hover:bg-[#E60020] py-1 px-4 rounded-full transition duration-200 ease-in-out cursor-pointer">Преимущества</a>
@@ -41,13 +41,9 @@ function toggled () {
 
 <script>
 import { defineComponent } from 'vue';
-import Button from 'primevue/button';
 
 export default defineComponent({
   name: 'NavBar',
-  components: {
-    Button
-  },
   computed: {
     isLoggedIn: function() {
       return this.$store.getters.isAuthenticated;

@@ -312,7 +312,7 @@
 
 
 <script setup>
-import { ref } from 'vue'
+import { defineComponent, ref } from 'vue'
 
 const visible = ref(false);
 const degree = ref('45');
@@ -329,11 +329,10 @@ function toggled () {
 
 
 <script>
-import {defineComponent, ref} from 'vue';
 
 
 export default defineComponent({
-  name: 'Calculation',
+  name: 'CalculationMain',
   props: ['data', 'cars_data'],
   computed: {
     isLoggedIn: function() {

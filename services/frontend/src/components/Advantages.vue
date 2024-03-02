@@ -38,7 +38,7 @@
             </div>
             <div class="flex-grow">
               <h2 class="text-gray-900 text-lg title-font font-semibold mb-8 w-3/5 mx-auto">ПРЕДОТВРАЩЕНИЕ СБОЕВ</h2>
-              <p class="leading-relaxed text-sm text-[#A7A7A7] font-medium">Наши программы предусматривают систематическую проверку всех ключевых компонентов грузовика, что позволяет выявлять и предотвращать потенциальные проблемы с вашим автомобилем до того, как они станут серьезными. </p>
+              <p class="leading-relaxed text-sm text-[#A7A7A7] font-medium">Наши программы предусматривают систематическую проверку всех ключевых компонентов грузовика, что позволяет выявлять и предотвращать потенциальные проблемы с вашим автомобилем до того, как они станут серьезными</p>
             </div>
           </div>
           <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -65,7 +65,7 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'Advantages',
+  name: 'AdvantagesMain',
   computed: {
     isLoggedIn: function() {
       return this.$store.getters.isAuthenticated;

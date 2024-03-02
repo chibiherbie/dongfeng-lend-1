@@ -1,13 +1,12 @@
 
 <script setup>
-  import Hero from "./components/Hero.vue";
+  import heroMain from "./components/Hero.vue";
   import NavBar from './components/NavBar.vue'
-  import Advantages from "./components/Advantages.vue";
+  import AdvantagesMain from "./components/Advantages.vue";
   import ChoiceCar from "./components/ChoiceCar.vue";
-  import Calculation from "./components/Calculation.vue";
+  import CalculationMain from "./components/Calculation.vue";
   import RequestForm from "./components/RequestForm.vue";
-  import Footer from "./components/Footer.vue";
-  import Hello from "./components/HelloWorld.vue";
+  import FooterMain from "./components/Footer.vue";
 </script>
 
 
@@ -16,18 +15,18 @@
 <!--    <Hello />-->
     <NavBar/>
 <!--    <div class="main container">-->
-      <Hero/>
-      <Advantages/>
+      <heroMain/>
+      <AdvantagesMain/>
       <ChoiceCar
         @slide-change="handleDataUpdated"
         @cars_info="handleCarsUpdated"
       />
-      <Calculation
+      <CalculationMain
       :data="receivedData"
       :cars_data="carsData"
       />
       <RequestForm/>
-      <Footer/>
+      <FooterMain/>
 <!--    </div>-->
   </div>
 </template>
@@ -39,7 +38,16 @@ export default {
   data() {
     return {
       receivedData: 0,
-      carsData: {}
+      carsData: {'cars':
+        [
+            {"img": "C80", "total": 0},
+            {"img": "C100"},
+            {"img": "C120"},
+            {"img": "C180"},
+            {"img": "Z55"},
+            {"img": "Z80"},
+        ]
+    }
     };
   },
   methods: {

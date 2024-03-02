@@ -2,8 +2,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from tortoise import Tortoise  # NEW
 
-# from database.register import register_tortoise
-# from database.config import TORTOISE_ORM
+from src.database.register import register_tortoise
+from src.database.config import TORTOISE_ORM
 from src.routes import cars
 
 
@@ -20,7 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# register_tortoise(app, config=TORTOISE_ORM, generate_schemas=False)
+register_tortoise(app, config=TORTOISE_ORM, generate_schemas=False)
 
 app.include_router(cars.router)
 

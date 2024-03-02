@@ -24,8 +24,7 @@
             <div class="carousel__item">
 
               <div class=" carousel__item px-5 py-10 mx-auto bg-white rounded-[98px] w-1/3 relative">
-
-              <img :src="'./src/assets/img/' + slide.img + '.png'" alt="Изображение">
+              <img :src="'img/' + slide.img + '.png'" alt="Изображение">
               <p class="text-center font-semibold text-xl">DONGFENG {{ slide.img }}</p>
 
             </div>
@@ -57,9 +56,9 @@
 </template>
 
 <script>
-import {defineComponent, ref} from 'vue';
+import {defineComponent} from 'vue';
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import { Carousel, Slide, Navigation } from 'vue3-carousel'
 import axios from "axios";
 
 export default defineComponent({
@@ -67,10 +66,9 @@ export default defineComponent({
     components: {
     Carousel,
     Slide,
-    Pagination,
     Navigation,
   },
-  props: ['currentSlide'],
+
   data() {
     return {
       cars_data: {},
@@ -80,13 +78,24 @@ export default defineComponent({
   methods: {
     next() {
       this.$refs.carousel.next()
-      this.$emit('slide-change', this.currentSlide + 1);
-      console.log(this.cars_data.cars[this.currentSlide + 1])
+
+      if (this.currentSlide + 1 === this.cars_data.cars.length) {
+        this.$emit('slide-change', 0);
+      }
+      else {
+        this.$emit('slide-change', this.currentSlide + 1);
+      }
+
     },
     prev() {
       this.$refs.carousel.prev()
-      this.$emit('slide-change', this.currentSlide - 1);
-      console.log(this.cars_data.cars[this.currentSlide - 1])
+
+      if (this.currentSlide - 1 === -1) {
+        this.$emit('slide-change', this.cars_data.cars.length - 1);
+      }
+      else {
+        this.$emit('slide-change', this.currentSlide - 1);
+      }
 
     },
     async getCars() {
@@ -97,6 +106,8 @@ export default defineComponent({
         })
         .catch((error) => {
           console.error(error);
+          // this.cars_data = {}
+          // this.$emit('cars_info', this.cars_data);
         });
     },
   },
