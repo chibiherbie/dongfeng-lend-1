@@ -1,5 +1,5 @@
 <template>
-  <header class="text-gray-800 body-font fixed top-0 z-10 w-full">
+  <header class="text-gray-800 body-font fixed top-0 z-10 w-full transition-all duration-500" :class="{ 'bg-[#232323] ': isScrolled }">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a @click="scrollTo('hero')" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer">
         <img src="../../public/img/logo-df-h360-color.png" class="max-w-[200px] max-h-[80px]" alt="">
@@ -44,10 +44,21 @@ import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'NavBar',
+  data() {
+    return {
+      isScrolled: false
+    };
+  },
   computed: {
     isLoggedIn: function() {
       return this.$store.getters.isAuthenticated;
     }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     async logout () {
@@ -60,6 +71,10 @@ export default defineComponent({
         const targetPosition = targetBlock.offsetTop - 150;
         window.scrollTo({ top: targetPosition, behavior: 'smooth' });
       }
+    },
+    handleScroll() {
+      // Проверяем положение скролла
+      this.isScrolled = window.scrollY > 250;
     }
   },
 });
