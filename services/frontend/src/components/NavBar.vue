@@ -20,7 +20,7 @@
   </header>
 
   <transition name="bounce" mode="out-in" v-if="visible">
-    <the-modal-component></the-modal-component>
+    <the-modal-component @close="toggled"></the-modal-component>
   </transition>
 
 </template>
