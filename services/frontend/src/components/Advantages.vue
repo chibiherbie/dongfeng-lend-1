@@ -1,5 +1,5 @@
 <template>
-  <section class="body-font bg-[#ECECEC] relative w-full ">
+  <section id="advantages" class="body-font bg-[#ECECEC] relative w-full ">
     <div class="mx-auto container h-[50vh]">
       <div class="container px-5 py-24 bg-[#f3f1ed] rounded-[98px] absolute -top-32">
         <div class="text-center mb-20">

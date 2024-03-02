@@ -1,6 +1,6 @@
 <template>
 
-<section class="body-font bg-[#ECECEC] relative w-full">
+<section id="request" class="body-font bg-[#ECECEC] relative w-full">
     <div class="container px-5 py-24 mx-auto bg-white rounded-t-[780px] w-4/5">
 
       <div class="flex flex-col text-center w-full mb-12">
@@ -18,29 +18,29 @@
 
         <div class="p-2 mb-3 w-full">
           <div class="relative">
-            <label for="email" class="leading-7 text-sm pl-2 font-semibold">Наименование юридического лица</label>
-            <input type="email" id="" name="email" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            <label for="name-company" class="leading-7 text-sm pl-2 font-semibold">Наименование юридического лица</label>
+            <input type="text" id="name-company" name="name-company" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
           </div>
         </div>
 
         <div class="p-2 mb-3 w-full">
           <div class="relative">
-            <label for="email" class="leading-7 text-sm pl-2 font-semibold">ФИО контактного лица</label>
-            <input type="email" id="" name="email" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            <label for="name" class="leading-7 text-sm pl-2 font-semibold">ФИО контактного лица</label>
+            <input type="text" id="name" name="name" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
           </div>
         </div>
 
         <div class="p-2 mb-3 w-full">
           <div class="relative">
-            <label for="email" class="leading-7 text-sm pl-2 font-semibold">Должность</label>
-            <input type="email" id="" name="email" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            <label for="position" class="leading-7 text-sm pl-2 font-semibold">Должность</label>
+            <input type="text" id="position" name="position" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
           </div>
         </div>
 
         <div class="p-2 mb-3 w-full">
           <div class="relative">
-            <label for="email" class="leading-7 text-sm pl-2 font-semibold">Телефон</label>
-            <input type="phone" id="phone" name="email" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            <label for="phone" class="leading-7 text-sm pl-2 font-semibold">Телефон</label>
+            <input type="phone" id="phone" name="phone" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
           </div>
         </div>
 
@@ -52,7 +52,7 @@
         </div>
 
         <div class="mt-4">
-          <button class="text-white bg-[#E60020] font-semibold uppercase border-0 py-3 px-6 focus:outline-none hover:bg-[#E60020] rounded-[50px] text-sm ">Отправить</button>
+          <button class="text-white bg-[#E60020] hover:text-[#E60020] font-semibold uppercase border-0 py-3 px-6 focus:outline-none hover:bg-gray-100 rounded-[50px] text-sm transition duration-200 ease-in-out">Отправить</button>
         </div>
       </form>
 

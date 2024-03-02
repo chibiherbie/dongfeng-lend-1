@@ -1,5 +1,5 @@
 <template>
-  <section class="body-font bg-[#ECECEC] relative w-full pb-40 text-black">
+  <section id="service" class="body-font bg-[#ECECEC] relative w-full pb-40 text-black">
 
     <div class="container px-5 pt-24 mx-auto">
       <h1 class="text-right font-semibold text-[64px] text-[#00000030] mr-20">СЕРВИСНЫЙ<br>КОНТРАКТ</h1>

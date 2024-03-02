@@ -1,14 +1,14 @@
 <template>
   <header class="text-gray-800 body-font fixed top-0 z-10 w-full">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer">
+      <a @click="scrollTo('hero')" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer">
         <img src="../../public/img/logo-df-h360-color.png" class="max-w-[200px] max-h-[80px]" alt="">
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center uppercase font-medium	transition duration-200 ease-in-out cursor-pointer">
-        <a class="mr-5 hover:text-white bg-white hover:bg-[#E60020] py-1 px-4 rounded-full transition duration-200 ease-in-out cursor-pointer">Преимущества</a>
-        <a class="mr-5 hover:text-white bg-white hover:bg-[#E60020] py-1 px-4 rounded-full transition duration-200 ease-in-out cursor-pointer">Сервисный контракт</a>
-        <a class="mr-5 hover:text-white bg-white hover:bg-[#E60020] py-1 px-4 rounded-full transition duration-200 ease-in-out cursor-pointer">Заявка</a>
-        <a class="mr-5 hover:text-white bg-white hover:bg-[#E60020] py-1 px-4 rounded-full transition duration-200 ease-in-out cursor-pointer">Контакты</a>
+        <a @click="scrollTo('advantages')" class="mr-5 hover:text-white bg-white hover:bg-[#E60020] py-1 px-4 rounded-full transition duration-200 ease-in-out cursor-pointer">Преимущества</a>
+        <a @click="scrollTo('service')" class="mr-5 hover:text-white bg-white hover:bg-[#E60020] py-1 px-4 rounded-full transition duration-200 ease-in-out cursor-pointer">Сервисный контракт</a>
+        <a @click="scrollTo('request')" class="mr-5 hover:text-white bg-white hover:bg-[#E60020] py-1 px-4 rounded-full transition duration-200 ease-in-out cursor-pointer">Заявка</a>
+        <a @click="scrollTo('contact')" class="mr-5 hover:text-white bg-white hover:bg-[#E60020] py-1 px-4 rounded-full transition duration-200 ease-in-out cursor-pointer">Контакты</a>
       </nav>
       <button @click="toggled" class="inline-flex items-center bg-white border-0 py-1 px-2 focus:outline-none hover:bg-[#E60020] hover:stroke-white rounded-full text-base mt-4 md:mt-0 transition duration-200 ease-in-out cursor-pointer">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user hover:stroke-white">
@@ -53,9 +53,17 @@ export default defineComponent({
     async logout () {
       await this.$store.dispatch('logOut');
       this.$router.push('/login');
+    },
+    scrollTo(targetId) {
+      const targetBlock = document.getElementById(targetId);
+      if (targetBlock) {
+        const targetPosition = targetBlock.offsetTop - 150;
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+      }
     }
   },
 });
+
 </script>
 
 <style scoped>

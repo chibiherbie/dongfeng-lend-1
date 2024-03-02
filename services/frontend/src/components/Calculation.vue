@@ -284,17 +284,17 @@
           </div>
 
           <div class="mt-10">
-            <button class="text-white bg-[#E60020] font-semibold uppercase border-0 py-3 px-6 focus:outline-none hover:bg-[#E60020] rounded-[50px] text-sm ">СГЕНИРИРОВАТЬ КП</button>
+            <button class="text-white bg-[#E60020] hover:text-[#E60020] font-semibold uppercase border-0 py-3 px-6 focus:outline-none hover:bg-gray-100 rounded-[50px] text-sm transition duration-200 ease-in-out">СГЕНИРИРОВАТЬ КП</button>
           </div>
 
           <div class="absolute right-0 bottom-0 flex space-x-2">
-            <svg width="56" height="55" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="28.2988" cy="27.5" r="27.5" fill="#D9D9D9"/>
-              <path d="M14.3474 35.9359C12.2443 34.5222 10.8596 32.1145 10.8596 29.382C10.8596 25.2775 13.9838 21.906 17.9743 21.5348C18.7906 16.5483 23.1022 12.7441 28.2986 12.7441C33.4951 12.7441 37.8067 16.5483 38.6231 21.5348C42.6135 21.906 45.7377 25.2775 45.7377 29.382C45.7377 32.1145 44.353 34.5222 42.2499 35.9359M21.323 37.2631L28.2986 44.2685M28.2986 44.2685L35.2743 37.2631M28.2986 44.2685V28.5063" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg class="cursor-pointer stroke-black hover:stroke-[#E60020] transition duration-200 ease-in-out" width="56" height="55" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="28.2988" cy="27.5" r="27.5" fill="#D9D9D9" stroke="none"/>
+              <path d="M14.3474 35.9359C12.2443 34.5222 10.8596 32.1145 10.8596 29.382C10.8596 25.2775 13.9838 21.906 17.9743 21.5348C18.7906 16.5483 23.1022 12.7441 28.2986 12.7441C33.4951 12.7441 37.8067 16.5483 38.6231 21.5348C42.6135 21.906 45.7377 25.2775 45.7377 29.382C45.7377 32.1145 44.353 34.5222 42.2499 35.9359M21.323 37.2631L28.2986 44.2685M28.2986 44.2685L35.2743 37.2631M28.2986 44.2685V28.5063" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <svg width="56" height="55" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="27.7012" cy="27.5" r="27.5" fill="#D9D9D9"/>
-              <path d="M35.5904 39.2212V33.3606H19.8117V39.2212M35.5904 39.2212V45.0819H19.8117V39.2212M35.5904 39.2212H43.4797V21.6393H35.5904M19.8117 39.2212H11.9224V21.6393H19.8117M35.5904 21.6393H19.8117M35.5904 21.6393V11.8715C35.5904 10.7926 34.7074 9.91797 33.6181 9.91797H21.784C20.6948 9.91797 19.8117 10.7926 19.8117 11.8715V21.6393" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg class="cursor-pointer stroke-black hover:stroke-[#E60020] transition duration-200 ease-in-out" width="56" height="55" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="27.7012" cy="27.5" r="27.5" fill="#D9D9D9" stroke="none"/>
+              <path d="M35.5904 39.2212V33.3606H19.8117V39.2212M35.5904 39.2212V45.0819H19.8117V39.2212M35.5904 39.2212H43.4797V21.6393H35.5904M19.8117 39.2212H11.9224V21.6393H19.8117M35.5904 21.6393H19.8117M35.5904 21.6393V11.8715C35.5904 10.7926 34.7074 9.91797 33.6181 9.91797H21.784C20.6948 9.91797 19.8117 10.7926 19.8117 11.8715V21.6393" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
 
 
