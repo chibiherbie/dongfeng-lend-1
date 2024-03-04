@@ -25,7 +25,7 @@
           </svg>
         </div>
 
-        <div class="transition-all ease-in-out" :style="{ display: visible ? 'block' : 'none' }">
+        <div class="transition-all ease-in-out overflow-auto" :style="{ display: visible ? 'block' : 'none' }">
           <table class="iksweb mt-16 mb-24">
             <tbody>
               <tr class="font-bold text-lg text-center h-14">
@@ -88,7 +88,7 @@
             </div>
           </div>
 
-          <div class="p-2 mb-3 w-full">
+          <div class="p-2 mb-12 md:mb-3 w-full">
             <div class="relative">
               <label for="email" class="leading-7 text-sm pl-2 font-bold">Email</label>
               <input type="email" id="email" name="email" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
@@ -99,7 +99,7 @@
             <button class="text-white bg-[#E60020] hover:text-[#E60020] font-semibold uppercase border-0 py-3 px-6 focus:outline-none hover:bg-gray-100 rounded-[50px] text-sm transition duration-200 ease-in-out">СГЕНИРИРОВАТЬ КП</button>
           </div>
 
-          <div class="absolute right-0 bottom-0 flex space-x-2">
+          <div class="absolute right-0 bottom-0 md:flex space-y-2 md:space-x-2">
             <svg class="cursor-pointer stroke-black hover:stroke-[#E60020] transition duration-200 ease-in-out" width="56" height="55" viewBox="0 0 56 55" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="28.2988" cy="27.5" r="27.5" fill="#D9D9D9" stroke="none"/>
               <path d="M14.3474 35.9359C12.2443 34.5222 10.8596 32.1145 10.8596 29.382C10.8596 25.2775 13.9838 21.906 17.9743 21.5348C18.7906 16.5483 23.1022 12.7441 28.2986 12.7441C33.4951 12.7441 37.8067 16.5483 38.6231 21.5348C42.6135 21.906 45.7377 25.2775 45.7377 29.382C45.7377 32.1145 44.353 34.5222 42.2499 35.9359M21.323 37.2631L28.2986 44.2685M28.2986 44.2685L35.2743 37.2631M28.2986 44.2685V28.5063" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -162,6 +162,7 @@ export default defineComponent({
 
 <style scoped>
   table.iksweb{
+    min-width: 850px;
     width: 97%;
     color: black;
     height: auto;

@@ -1,13 +1,14 @@
 <template>
   <section id="advantages" class="body-font bg-[#ECECEC] relative w-full ">
-    <div class="mx-auto container h-[50vh]">
+    <div class="mx-auto container h-[100vh] sm:h-[70vh] lg:h-[50vh]">
       <div class="container px-5 py-24 bg-[#f3f1ed] rounded-[98px] absolute -top-32">
         <div class="text-center mb-20">
           <h1 class="text-2xl font-semibold title-font mb-4 uppercase text-black">Преимущества сервесных контраков DONGFENG</h1>
         </div>
 
-        <div class="flex sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+        <div class="sm:grid sm:grid-cols-2 lg:flex sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+
+          <div class="p-4 lg:w-1/3 flex flex-col text-center items-center">
             <div class="w-20 h-20 inline-flex items-center justify-center rounded-full text-green-500 mb-5 flex-shrink-0">
               <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M36.5 5.09302C19.1544 5.09302 5.09302 19.1544 5.09302 36.5C5.09302 53.8455 19.1544 67.907 36.5 67.907C53.8455 67.907 67.907 53.8455 67.907 36.5C67.907 19.1544 53.8455 5.09302 36.5 5.09302ZM0 36.5C0 16.3416 16.3416 0 36.5 0C56.6585 0 73 16.3416 73 36.5C73 56.6585 56.6585 73 36.5 73C16.3416 73 0 56.6585 0 36.5ZM33.653 16.9766C33.6968 16.9767 33.7403 16.9767 33.7837 16.9767H41.593C47.6873 16.9767 52.6279 21.9172 52.6279 28.0116C52.6279 34.1059 47.6873 39.0465 41.593 39.0465H32.2558V40.7442H36.5C37.9064 40.7442 39.0465 41.8843 39.0465 43.2907C39.0465 44.6971 37.9064 45.8372 36.5 45.8372H32.2558V53.4767C32.2558 54.8831 31.1157 56.0233 29.7093 56.0233C28.3029 56.0233 27.1628 54.8831 27.1628 53.4767V45.8372H26.314C24.9076 45.8372 23.7674 44.6971 23.7674 43.2907C23.7674 41.8843 24.9076 40.7442 26.314 40.7442H27.1628V39.0465H26.314C24.9076 39.0465 23.7674 37.9064 23.7674 36.5C23.7674 35.0936 24.9076 33.9535 26.314 33.9535H27.1628V23.5977C27.1628 23.5543 27.1627 23.5107 27.1627 23.467C27.1621 22.9729 27.1615 22.4592 27.236 21.9891C27.6386 19.4466 29.6327 17.4526 32.175 17.0499C32.6453 16.9754 33.159 16.976 33.653 16.9766ZM32.2558 33.9535H41.593C44.8746 33.9535 47.5349 31.2932 47.5349 28.0116C47.5349 24.73 44.8746 22.0698 41.593 22.0698H33.7837C33.4544 22.0698 33.2585 22.07 33.1108 22.074C33.017 22.0766 32.9763 22.0802 32.9665 22.0811C32.6076 22.1403 32.3264 22.4216 32.267 22.7804C32.2663 22.7902 32.2626 22.8309 32.2602 22.9247C32.2562 23.0724 32.2558 23.2684 32.2558 23.5977V33.9535Z" fill="#E60020"/>
@@ -18,7 +19,7 @@
               <p class="leading-relaxed text-sm text-[#A7A7A7] font-medium">Наши специализированные программы сочетают в себе регулярные проверки, замены деталей и закрепленную стоимость технического обслуживания, что помогает снизить общие эксплуатационные расходы и делает владение грузовиком более выгодным для вас.</p>
             </div>
           </div>
-          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="p-4 lg:w-1/3 flex flex-col text-center items-center">
             <div class="w-20 h-20 inline-flex items-center justify-center rounded-full text-green-500 mb-5 flex-shrink-0">
               <svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M50.3332 38.5C50.3332 45.0356 45.0354 50.3334 38.4998 50.3334C31.9643 50.3334 26.6665 45.0356 26.6665 38.5C26.6665 31.9645 31.9643 26.6667 38.4998 26.6667C45.0354 26.6667 50.3332 31.9645 50.3332 38.5Z" stroke="#E60020" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -30,7 +31,7 @@
               <p class="leading-relaxed text-sm text-[#A7A7A7] font-medium">В рамках обслуживания грузовика DONGFENG по контракту мы заботимся о каждой детали вашего транспортного средства и обеспечиваем его бесперебойную работу и стабильную производительность в течение долгого времени.</p>
             </div>
           </div>
-          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="p-4 lg:w-1/3 flex flex-col text-center items-center">
             <div class="w-20 h-20 inline-flex items-center justify-center rounded-full text-green-500 mb-5 flex-shrink-0">
               <svg width="69" height="76" viewBox="0 0 69 76" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.6415 38.0876L30.4981 45.9442L46.2113 30.231M65.8528 38.0876C65.8528 55.6122 44.4043 68.3108 36.946 72.197C36.1395 72.6174 35.7361 72.8275 35.1767 72.9364C34.7407 73.0212 34.1121 73.0212 33.6761 72.9364C33.1167 72.8275 32.7133 72.6174 31.9068 72.197C24.4484 68.3108 3 55.6122 3 38.0876V23.2292C3 20.0884 3 18.5181 3.51367 17.1682C3.96742 15.9757 4.7048 14.9117 5.66205 14.0681C6.74564 13.1132 8.216 12.5618 11.1567 11.459L32.2195 3.56047C33.0362 3.25422 33.4443 3.10109 33.8647 3.04036C34.2371 2.98655 34.6158 2.98655 34.9882 3.04036C35.4085 3.10109 35.8166 3.25422 36.6333 3.56047L57.6961 11.459C60.6368 12.5618 62.1072 13.1132 63.1906 14.0681C64.1479 14.9117 64.8853 15.9757 65.339 17.1682C65.8528 18.5181 65.8528 20.0884 65.8528 23.2292V38.0876Z" stroke="#E60020" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -41,7 +42,7 @@
               <p class="leading-relaxed text-sm text-[#A7A7A7] font-medium">Наши программы предусматривают систематическую проверку всех ключевых компонентов грузовика, что позволяет выявлять и предотвращать потенциальные проблемы с вашим автомобилем до того, как они станут серьезными</p>
             </div>
           </div>
-          <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+          <div class="p-4 lg:w-1/3 flex flex-col text-center items-center">
             <div class="w-20 h-20 inline-flex items-center justify-center rounded-full text-green-500 mb-5 flex-shrink-0">
               <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M69 69H14.7333C10.6263 69 8.57275 69 7.00407 68.2007C5.6242 67.4978 4.50234 66.3758 3.7993 64.996C3 63.4274 3 61.3737 3 57.2667V3M17.6667 47L36 25L50.6667 39.6667L69 17.6667" stroke="#E60020" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>

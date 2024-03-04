@@ -1,10 +1,10 @@
 <template>
-  <header class="text-gray-800 body-font fixed top-0 z-10 w-full transition-all duration-500" :class="{ 'bg-[#232323] ': isScrolled }">
+  <header class="text-gray-800 body-font fixed top-0 z-20 w-full transition-all duration-500" :class="{ 'bg-[#232323] ': isScrolled }">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a @click="scrollTo('hero')" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer">
         <img src="../../public/img/logo-df-h360-color.png" class="max-w-[200px] max-h-[80px]" alt="">
       </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center uppercase font-medium	transition duration-200 ease-in-out cursor-pointer">
+      <nav class="grid grid-cols-2 gap-y-2 md:ml-auto md:flex flex-wrap items-center text-base justify-center uppercase font-medium	transition duration-200 ease-in-out cursor-pointer">
         <a @click="scrollTo('advantages')" class="mr-5 hover:text-white bg-white hover:bg-[#E60020] py-1 px-4 rounded-full transition duration-200 ease-in-out cursor-pointer">Преимущества</a>
         <a @click="scrollTo('service')" class="mr-5 hover:text-white bg-white hover:bg-[#E60020] py-1 px-4 rounded-full transition duration-200 ease-in-out cursor-pointer">Сервисный контракт</a>
         <a @click="scrollTo('request')" class="mr-5 hover:text-white bg-white hover:bg-[#E60020] py-1 px-4 rounded-full transition duration-200 ease-in-out cursor-pointer">Заявка</a>

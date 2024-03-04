@@ -6,7 +6,7 @@
           <path d="M1 1L13 13" stroke="#A7A7A7" stroke-opacity="0.65" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M1 13L13 1" stroke="#A7A7A7" stroke-opacity="0.65" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <svg width="auto" height="135" viewBox="0 0 462 135" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-2">
+        <svg width="100%" height="135" viewBox="0 0 462 135" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-4">
           <g style="mix-blend-mode:multiply">
           <path d="M465.635 19.5993L464.192 53.8159C300.636 163.452 19.3777 107.549 -3.7188 108.394L-3.37014 100.126C30.5922 102.493 303.022 160.771 465.635 19.5993Z" fill="url(#paint0_linear_145_1010)"/>
           </g>
