@@ -3,6 +3,7 @@ version: '3.8'
 services:
 
   backend:
+    image: chibiherbie/dongfeng-lend-backend:0.0.1
     build: ./services/backend
     ports:
       - "5000:5000"
@@ -14,15 +15,16 @@ services:
     depends_on:
       - db
 
-  frontend:
-    build: ./services/frontend
-    volumes:
-      - './services/frontend:/app'
-      - '/app/node_modules'
-    expose:
-      - 8080
-    ports:
-      - "8080:8080"
+#  frontend:
+#    image: chibiherbie/dongfeng-lend-frontend:0.0.1
+#    build: ./services/frontend
+#    volumes:
+#      - './services/frontend:/app'
+#      - '/app/node_modules'
+#    expose:
+#      - 8080
+#    ports:
+#      - "8080:8080"
 
   db:
     image: postgres:15.1

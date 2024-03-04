@@ -1,15 +1,11 @@
-FROM node:lts-alpine
-
+FROM node:latest as build-stage
 WORKDIR /app
-
-ENV PATH /app/node_modules/.bin:$PATH
-
-RUN npm install @vue/cli
-
-COPY package.json .
-COPY package-lock.json .
+COPY package*.json ./
 RUN npm install
+COPY ./ .
+RUN npm run build
 
-COPY . .
-
-CMD ["npm", "run", "serve"]
+FROM nginx as production-stage
+RUN mkdir /app
+COPY --from=build-stage /app/dist /app
+COPY nginx.conf /etc/nginx/nginx.conf
