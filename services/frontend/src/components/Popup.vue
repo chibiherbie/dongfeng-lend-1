@@ -23,24 +23,101 @@
         <div class="px-6 pb-6 text-center">
             <h3 class="text-2xl mb-2 font-semibold text-black">ЛИЧНЫЙ КАБИНЕТ</h3>
         </div>
-        <ul class="cursor-pointer text-center mt-10 px-24">
-          <li class="w-full px-6 py-4">
-            <button class="w-full text-white bg-[#A7A7A7] hover:text-[#E60020] font-semibold uppercase border-0 py-3 px-6 focus:outline-none hover:bg-gray-100 rounded-[50px] text-sm transition duration-200 ease-in-out">Зарегистрироваться</button>
-          </li>
-          <li class="w-full px-6 pb-3">
-            <button class="w-full text-white bg-[#E60020] hover:text-[#E60020] font-semibold uppercase border-0 py-3 px-6 focus:outline-none hover:bg-gray-100 rounded-[50px] text-sm transition duration-200 ease-in-out">Войти</button>
-          </li>
-        </ul>
+
+        <div v-if="!register & !login">
+          <ul class="cursor-pointer text-center mt-10 px-24">
+            <li class="w-full px-6 py-4">
+              <button v-on:click="registerPopup" class="w-full text-white bg-[#A7A7A7] hover:text-[#E60020] font-semibold uppercase border-0 py-3 px-6 focus:outline-none hover:bg-gray-100 rounded-[50px] text-sm transition duration-200 ease-in-out">Зарегистрироваться</button>
+            </li>
+            <li class="w-full px-6 pb-3">
+              <button v-on:click="loginPopup" class="w-full text-white bg-[#E60020] hover:text-[#E60020] font-semibold uppercase border-0 py-3 px-6 focus:outline-none hover:bg-gray-100 rounded-[50px] text-sm transition duration-200 ease-in-out">Войти</button>
+            </li>
+          </ul>
+        </div>
+
+        <div v-if="register">
+          <ul class="mt-10 px-24">
+            <li class="p-2 w-full">
+              <div class="relative">
+                <label for="email" class="text-black leading-7 text-sm pl-2 font-semibold">ФИО</label>
+                <input id="email" name="email" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </li>
+            <li class="p-2 w-full">
+              <div class="relative">
+                <label for="email" class="text-black leading-7 text-sm pl-2 font-semibold">Должность</label>
+                <input id="email" name="email" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </li>
+            <li class="p-2 w-full">
+              <div class="relative">
+                <label for="email" class="text-black leading-7 text-sm pl-2 font-semibold">Телефон</label>
+                <input id="email" name="email" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </li>
+            <li class="p-2 w-full">
+              <div class="relative">
+                <label for="email" class="text-black leading-7 text-sm pl-2 font-semibold">email</label>
+                <input type="email" id="email" name="email" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </li>
+            <li class="p-2 w-full">
+              <div class="relative">
+                <label for="email" class="text-black leading-7 text-sm pl-2 font-semibold">Пароль</label>
+                <input type="email" id="email" name="email" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </li>
+            <li class="w-full px-6 py-4">
+              <button class="w-full text-white bg-[#A7A7A7] hover:text-[#E60020] font-semibold uppercase border-0 py-3 px-6 focus:outline-none hover:bg-gray-100 rounded-[50px] text-sm transition duration-200 ease-in-out">Зарегистрироваться</button>
+            </li>
+          </ul>
+        </div>
+
+        <div v-if="login">
+          <ul class="mt-10 px-24">
+            <li class="p-2 w-full">
+              <div class="relative">
+                <label for="email" class="text-black leading-7 text-sm pl-2 font-semibold">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </li>
+            <li class="p-2 mb-3 w-full">
+              <div class="relative">
+                <label for="email" class="text-black leading-7 text-sm pl-2 font-semibold">Пароль</label>
+                <input type="password" id="email" name="email" class="w-full bg-white rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+              </div>
+            </li>
+            <li class="w-full px-6 pb-3">
+              <button class="cursor-pointer w-full text-white bg-[#E60020] hover:text-[#E60020] font-semibold uppercase border-0 py-3 px-6 focus:outline-none hover:bg-gray-100 rounded-[50px] text-sm transition duration-200 ease-in-out">Войти</button>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </div>
 </template>
+
+<script setup>
+import {ref} from "vue";
+
+const register = ref(false);
+const login = ref(false);
+
+function registerPopup() {
+      register.value = !register.value
+}
+function loginPopup() {
+      login.value = !login.value
+}
+
+</script>
 
 <script>
 export default {
     name: "TheModalComponent",
     methods: {
         hide() {
-            console.log('click registered');
+            console.log('close popup');
             this.$emit('close')
         }
     }

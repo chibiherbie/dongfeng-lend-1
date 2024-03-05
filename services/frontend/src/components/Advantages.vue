@@ -1,5 +1,5 @@
 <template>
-  <section id="advantages" class="body-font bg-[#ECECEC] relative w-full ">
+  <section id="advantages" class="body-font bg-[#ECECEC] relative w-full pb-[750px] sm:pb-[500px] md:pb-96 xl:pb-52">
     <div class="mx-auto container h-[100vh] sm:h-[70vh] lg:h-[50vh]">
       <div class="container px-5 py-24 bg-[#f3f1ed] rounded-[98px] absolute -top-32">
         <div class="text-center mb-20">
@@ -49,8 +49,8 @@
               </svg>
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-semibold mb-8 w-4/5 mx-auto">ОПТИМИЗАЦИЯ ОБСЛУЖИВАНИЯ</h2>
-              <p class="leading-relaxed text-sm text-[#A7A7A7] font-medium">Сервисные контракты DONGFENG предоставляют вам максимальную гибкость планирования, благодаря чему вы можете минимизировать простои и проводить техническое обслуживание вашего транспортного средства в удобное для вас время.</p>
+              <h2 class="text-gray-900 text-lg title-font font-semibold mb-8 w-4/5 mx-auto">ОПТИМИЗАЦИЯ</h2>
+              <p class="leading-relaxed text-sm text-[#A7A7A7] font-medium">Сервисные контракты DONGFENG предоставляют вам максимальную гибкость планирования, благодаря чему вы можете минимизировать простои и проводить техническое обслуживание вашего транспортного средства в удобное время месте.</p>
             </div>
           </div>
 

@@ -1,13 +1,13 @@
 <template>
 
 <section id="request" class="body-font bg-[#ECECEC] relative w-full">
-    <div class="container px-5 py-24 mx-auto bg-white rounded-t-[780px] lg:w-4/5">
+    <div class="container px-5 py-24 mx-auto bg-white rounded-t-[480px] md:rounded-t-[780px] lg:w-4/5">
 
       <div class="flex flex-col text-center w-full mb-12">
         <h1 class="sm:text-4xl text-3xl text-[#00000030] font-semibold">ЗАЯВКА НА<br>ПОДГОТОВКУ ДОГОВОРА</h1>
       </div>
 
-      <form action="" class="w-3/5 mx-auto flex flex-wrap justify-center text-black">
+      <form action="" class="w-4/5 md:w-3/5 mx-auto flex flex-wrap justify-center text-black">
 
         <div class="p-2 mb-3 w-full">
           <div class="relative">

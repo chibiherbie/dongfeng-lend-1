@@ -10,7 +10,7 @@
 
       </div>
 
-      <div class="w-[75%] h-1 rounded-full bg-[#E60020] inline-flex absolute bottom-2 right-0"></div>
+      <div class="hidden md:visible w-[40%] xl:w-[75%] h-1 rounded-full bg-[#E60020] md:inline-flex absolute bottom-2 right-0"></div>
 
     </div>
     <transition name="fade">
