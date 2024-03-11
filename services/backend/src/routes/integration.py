@@ -6,19 +6,49 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from fastapi.security import OAuth2PasswordRequestForm
-
+from fastapi_mail import FastMail, MessageSchema, ConnectionConfig
 from tortoise.contrib.fastapi import HTTPNotFoundError
+from pydantic import BaseModel  # Импортируем BaseModel
 
 
 router = APIRouter()
 
+conf = ConnectionConfig(
+    MAIL_USERNAME="",
+    MAIL_PASSWORD="",
+    MAIL_FROM="",
+    MAIL_PORT=465,
+    MAIL_SERVER="smtp.yandex.ru",
+    MAIL_STARTTLS=True,
+    MAIL_SSL_TLS=False,
+)
 
-@router.get(
+
+html = """
+<p>Привет, тебе пришло письмо от {{ email }} с сообщением:</p>
+<p>asdasdasdasd</p>
+"""
+
+
+class EmailData(BaseModel):
+    email: str
+
+
+@router.post(
     "/send_email"
 )
-async def get_cars():
-    with open(os.path.abspath('src/files/cars_data.json'), mode='r') as file:
-        analytics_json = json.load(file)
+async def send_email(email_data: EmailData):
+    message = MessageSchema(
+        subject="Новое сообщение",
+        recipients=[''],
+        body=html,
+        subtype="html",
+        params={"email": email_data.email}
+    )
 
-    return analytics_json
-
+    try:
+        fm = FastMail(conf)
+        await fm.send_message(message)
+        return {"message": "Письмо успешно отправлено"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Ошибка при отправке письма: {str(e)}")
