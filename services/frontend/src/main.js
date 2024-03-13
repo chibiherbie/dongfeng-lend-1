@@ -7,7 +7,7 @@ import App from './App.vue'
 const app = createApp(App);
 
 axios.defaults.withCredentials = false;
-axios.defaults.baseURL = 'http://127.0.0.1:5000/';  // the FastAPI backend
-// axios.defaults.baseURL = 'http://89.111.174.7:5000/';  // the FastAPI backend
+// axios.defaults.baseURL = 'http://127.0.0.1:5000/';  // the FastAPI backend
+axios.defaults.baseURL = 'https://backe.dongfeng-servicekontrakt.ru';  // the FastAPI backend
 
 app.mount('#app')

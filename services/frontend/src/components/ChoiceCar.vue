@@ -1,16 +1,16 @@
 <template>
-  <section id="service" class="body-font bg-[#ECECEC] relative w-full pb-20 md:pb-40 text-black pt-24">
+  <section id="service" class="body-font bg-[#ECECEC] relative w-full pb-20 md:pb-40 text-black pt-4 md:pt-24">
 
     <div class="container px-5 mx-auto md:absolute top-0 right-4">
-      <h1 class="text-right font-semibold text-[64px] text-[#00000030] mr-20">СЕРВИСНЫЙ<br>КОНТРАКТ</h1>
+      <h1 class="mb-10 md:mb-0 text-right font-semibold text-5xl md:text-[64px] text-[#00000030] mr-20">СЕРВИСНЫЙ<br>КОНТРАКТ</h1>
     </div>
 
-    <div class="flex relative h-[140px] w-full mb-20 md:mb-32">
+    <div class="flex relative h-[92px] md:h-[140px] w-full mb-20 md:mb-32">
       <div class="w-24 h-1 rounded-full bg-[#E60020] inline-flex absolute bottom-2"></div>
 
       <div class="absolute left-28 flex items-center">
-        <p class="text-[#E60020] font-semibold text-[122px]">1</p>
-        <h1 class="font-semibold text-4xl ml-2">ВЫБОР<br>АВТОМОБИЛЯ</h1>
+        <p class="text-[#E60020] font-semibold text-[75px] md:text-[122px]">1</p>
+        <h1 class="font-semibold text-3xl md:text-4xl ml-2">ВЫБОР<br>АВТОМОБИЛЯ</h1>
       </div>
 
       <div class="hidden md:visible w-[40%] xl:w-[75%] h-1 rounded-full bg-[#E60020] md:inline-flex absolute bottom-2 right-0"></div>
@@ -133,11 +133,6 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.carousel__slide {
-  padding: 20px;
-      width: 100%;
-
-}
 
 .carousel__viewport {
   perspective: 1000px;
@@ -149,6 +144,8 @@ export default defineComponent({
 }
 
 .carousel__slide {
+  padding: 20px;
+  width: 100%;
   opacity: 0.9;
   transform: rotateY(-20deg) scale(0.9);
 }
@@ -164,6 +161,13 @@ export default defineComponent({
 
 .carousel__item {
   width: 90%;
+}
+
+@media (max-width: 768px) {
+  .carousel__slide {
+    padding: 0;
+    transform: none;
+  }
 }
 
 </style>

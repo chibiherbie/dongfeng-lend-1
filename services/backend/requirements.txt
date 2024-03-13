@@ -5,4 +5,3 @@ tortoise-orm
 uvicorn
 fastapi-mail
 docxtpl
-docx2pdf

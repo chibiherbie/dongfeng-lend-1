@@ -1,12 +1,12 @@
 <template>
   <section class="body-font bg-[#ECECEC] relative w-full pb-40">
 
-    <div class="flex relative h-[140px] w-full">
+    <div class="flex relative h-[92px] h-[140px] w-full">
       <div class="w-24 h-1 rounded-full bg-[#E60020] inline-flex absolute bottom-2"></div>
 
       <div class="absolute left-28 flex items-center">
-        <p class="text-[#E60020] font-semibold text-[122px]">2</p>
-        <h1 class="font-semibold text-4xl ml-2 text-black">ПОЛУЧЕНИЕ<br>РАСЧЕТА</h1>
+        <p class="text-[#E60020] font-semibold text-[75px] md:text-[122px]">2</p>
+        <h1 class="font-semibold text-3xl md:text-4xl ml-2 text-black">ПОЛУЧЕНИЕ<br>РАСЧЕТА</h1>
 
       </div>
 
@@ -18,7 +18,7 @@
       <div class="container mx-auto py-20">
 
         <div class="flex justify-between items-center">
-          <h1 class="font-semibold text-4xl ml-2 text-black">ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ</h1>
+          <h1 class="font-semibold text-3xl md:text-4xl ml-2 text-black">ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ</h1>
           <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg" :class='"transition-all ease-in-out cursor-pointer rotate-" + degree' @click="toggled">
             <path d="M24.9116 21.9023C24.0806 21.0713 22.7333 21.0713 21.9023 21.9023C21.0713 22.7333 21.0713 24.0806 21.9023 24.9116L27.4906 30.5L21.9024 36.0885C21.0714 36.9192 21.0714 38.2666 21.9024 39.0976C22.7333 39.9286 24.0807 39.9286 24.9116 39.0976L30.5001 33.5095L36.0882 39.0976C36.9192 39.9286 38.2666 39.9286 39.0977 39.0976C39.9287 38.2666 39.9287 36.9192 39.0977 36.0882L33.5092 30.5L39.0977 24.9116C39.9287 24.0807 39.9287 22.7334 39.0977 21.9024C38.2666 21.0714 36.9192 21.0714 36.0882 21.9024L30.5001 27.4906L24.9116 21.9023Z" fill="#E60020"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M30.5 0C13.6553 0 0 13.6553 0 30.5C0 47.3448 13.6553 61 30.5 61C47.3448 61 61 47.3448 61 30.5C61 13.6553 47.3448 0 30.5 0ZM4.25581 30.5C4.25581 16.0057 16.0057 4.25581 30.5 4.25581C44.9942 4.25581 56.7442 16.0057 56.7442 30.5C56.7442 44.9942 44.9942 56.7442 30.5 56.7442C16.0057 56.7442 4.25581 44.9942 4.25581 30.5Z" fill="#E60020"/>
