@@ -14,9 +14,9 @@ from pydantic import BaseModel  # Импортируем BaseModel
 router = APIRouter()
 
 conf = ConnectionConfig(
-    MAIL_USERNAME="",
-    MAIL_PASSWORD="",
-    MAIL_FROM="",
+    MAIL_USERNAME="hyperpe4nka@yandex.ru",
+    MAIL_PASSWORD="jrajgfmvgrgqinve",
+    MAIL_FROM="hyperpe4nka@yandex.ru",
     MAIL_PORT=465,
     MAIL_SERVER="smtp.yandex.ru",
     MAIL_STARTTLS=True,
@@ -40,7 +40,7 @@ class EmailData(BaseModel):
 async def send_email(email_data: EmailData):
     message = MessageSchema(
         subject="Новое сообщение",
-        recipients=[''],
+        recipients=['bekkerrdm@gmail.com'],
         body=html,
         subtype="html",
         params={"email": email_data.email}

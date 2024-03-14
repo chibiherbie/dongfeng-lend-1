@@ -14,7 +14,7 @@
 
     </div>
     <transition name="fade">
-    <div class="bg-white mt-32" :class="{ 'w-[95%]': visible, 'w-[85%]': !visible }">
+    <div class="bg-white mt-32" :class="{ 'sm:w-[95%]': visible, 'w-[85%]': !visible }">
       <div class="container mx-auto py-20">
 
         <div class="flex justify-between items-center">
@@ -51,7 +51,7 @@
             </tbody>
           </table>
 
-          <form @submit.prevent="submitForm(false)" class="w-4/6 ml-auto mr-[15%] flex flex-wrap justify-center text-black relative">
+          <form @submit.prevent="submitForm(false)" class="w-5/6 sm:w-4/6 ml-auto mr-[10%] sm:mr-[15%] flex flex-wrap justify-center text-black relative">
 
             <div class="p-2 mb-3 w-full">
               <div class="relative">

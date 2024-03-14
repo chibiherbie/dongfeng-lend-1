@@ -1,7 +1,7 @@
 <template>
-  <section id="advantages" class="body-font bg-[#ECECEC] relative w-full pb-[750px] sm:pb-[500px] md:pb-96 xl:pb-52">
-    <div class="mx-auto container h-[100vh] sm:h-[70vh] lg:h-[50vh]">
-      <div class="container px-5 py-24 bg-[#f3f1ed] rounded-[98px] absolute -top-32">
+  <section id="advantages" class="body-font bg-[#ECECEC] relative h-full w-full pb-10 md:pb-28 xl:pb-36">
+    <div class="mx-auto container h-full lg:h-[50vh]">
+      <div class="container px-5 py-24 bg-[#f3f1ed] rounded-[98px] relative  -top-32">
         <div class="text-center mb-20">
           <h1 class="text-2xl font-semibold title-font mb-4 uppercase text-black">Преимущества сервесных контраков DONGFENG</h1>
         </div>

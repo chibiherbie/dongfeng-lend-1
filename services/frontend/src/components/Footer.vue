@@ -70,7 +70,7 @@
           <p class="mt-6 text-sm">Суббота-Воскресенье:            Закрыто</p>
 
         </div>
-        <div class="lg:w-1/3 md:w-1/2 w-full">
+        <div class="lg:w-1/3 mt-10 md:mt-0 md:w-1/2 w-full">
           <h2 class="title-font font-medium tracking-widest text-xl mb-3">Контакты</h2>
           <div class="flex items-center mb-8 justify-center md:justify-normal">
             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">

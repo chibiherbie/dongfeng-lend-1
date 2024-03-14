@@ -24,7 +24,7 @@
             <div class="md:w-full xl:w-[90%]">
 
               <div class="md:w-full xl:w-[90%] px-5 py-10 mx-auto bg-white rounded-3xl md:rounded-[98px] relative">
-              <img :src="'img/' + slide.img + '.png'" alt="Изображение" class="h-60 w-96 md:h-auto md:w-auto">
+              <img :src="'img/' + slide.img + '.png'" alt="Изображение" class="h-60 w-96 md:h-auto md:w-auto object-cover">
               <p class="text-center font-semibold text-xl">DONGFENG {{ slide.img }}</p>
 
             </div>
