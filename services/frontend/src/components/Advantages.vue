@@ -1,12 +1,12 @@
 <template>
-  <section id="advantages" class="body-font bg-[#ECECEC] relative h-full w-full pb-10 md:pb-28 xl:pb-36">
+  <section id="advantages" class="body-font bg-[#ECECEC] relative h-full w-full md:pb-7 xl:pb-20">
     <div class="mx-auto container h-full lg:h-[50vh]">
-      <div class="container px-5 py-24 bg-[#f3f1ed] rounded-[98px] relative  -top-32">
+      <div class="container px-5 py-24 bg-[#f3f1ed] rounded-[98px] relative -top-32 md:-top-44">
         <div class="text-center mb-20">
-          <h1 class="text-2xl font-semibold title-font mb-4 uppercase text-black">Преимущества сервесных контраков DONGFENG</h1>
+          <h1 class="text-2xl md:text-4xl font-semibold title-font mb-4 uppercase text-black">Преимущества сервесных контраков DONGFENG</h1>
         </div>
 
-        <div class="sm:grid sm:grid-cols-2 lg:flex sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+        <div class="md:grid md:grid-cols-2 lg:flex sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
 
           <div class="p-4 lg:w-1/3 flex flex-col text-center items-center">
             <div class="w-20 h-20 inline-flex items-center justify-center rounded-full text-green-500 mb-5 flex-shrink-0">
@@ -15,7 +15,7 @@
               </svg>
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-semibold mb-8 w-4/5 mx-auto">СНИЖЕНИЕ ЭКСПЛУАТАЦИОННЫХ ЗАТРАТ</h2>
+              <h2 class="text-gray-900 text-lg xl:text-2xl title-font font-semibold w-4/5 mx-auto mb-8 lg:mb-0">СНИЖЕНИЕ ЭКСПЛУАТАЦИОННЫХ ЗАТРАТ</h2>
               <p class="leading-relaxed text-sm text-[#A7A7A7] font-medium">Наши специализированные программы сочетают в себе регулярные проверки, замены деталей и закрепленную стоимость технического обслуживания, что помогает снизить общие эксплуатационные расходы и делает владение грузовиком более выгодным для вас.</p>
             </div>
           </div>
@@ -27,7 +27,7 @@
               </svg>
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-semibold mb-8 w-4/5 mx-auto">ПОВЫШЕННАЯ ПРОИЗВОДИТЕЛЬНОСТЬ</h2>
+              <h2 class="text-gray-900 text-lg xl:text-2xl title-font font-semibold mb-8 w-4/5 mx-auto">ПОВЫШЕННАЯ ПРОИЗВОДИТЕЛЬНОСТЬ</h2>
               <p class="leading-relaxed text-sm text-[#A7A7A7] font-medium">В рамках обслуживания грузовика DONGFENG по контракту мы заботимся о каждой детали вашего транспортного средства и обеспечиваем его бесперебойную работу и стабильную производительность в течение долгого времени.</p>
             </div>
           </div>
@@ -38,7 +38,7 @@
               </svg>
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-semibold mb-8 w-3/5 mx-auto">ПРЕДОТВРАЩЕНИЕ СБОЕВ</h2>
+              <h2 class="text-gray-900 text-lg xl:text-2xl title-font font-semibold mb-8 w-3/5 mx-auto">ПРЕДОТВРАЩЕНИЕ СБОЕВ</h2>
               <p class="leading-relaxed text-sm text-[#A7A7A7] font-medium">Наши программы предусматривают систематическую проверку всех ключевых компонентов грузовика, что позволяет выявлять и предотвращать потенциальные проблемы с вашим автомобилем до того, как они станут серьезными</p>
             </div>
           </div>
@@ -49,7 +49,7 @@
               </svg>
             </div>
             <div class="flex-grow">
-              <h2 class="text-gray-900 text-lg title-font font-semibold mb-8 w-4/5 mx-auto">ОПТИМИЗАЦИЯ</h2>
+              <h2 class="text-gray-900 text-lg xl:text-2xl title-font font-semibold mb-8 md:mb-16 w-4/5 mx-auto">ОПТИМИЗАЦИЯ</h2>
               <p class="leading-relaxed text-sm text-[#A7A7A7] font-medium">Сервисные контракты DONGFENG предоставляют вам максимальную гибкость планирования, благодаря чему вы можете минимизировать простои и проводить техническое обслуживание вашего транспортного средства в удобное время месте.</p>
             </div>
           </div>

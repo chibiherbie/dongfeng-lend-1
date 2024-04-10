@@ -1,5 +1,5 @@
 <template>
-  <header class="text-gray-800 body-font fixed top-0 z-20 w-full transition-all duration-500" :class="{ 'bg-[#232323] ': isScrolled }">
+  <header class="text-gray-800 body-font fixed top-0 z-20 w-full transition-all duration-500 bg-[#232323]" :class="{ 'bg-[#232323] ': isScrolled }">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a @click="scrollTo('hero')" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer">
         <img src="../../public/img/logo-df-h360-color.png" class="max-w-[200px] max-h-[80px]" alt="">
